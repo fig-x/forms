@@ -343,8 +343,8 @@
           <span><strong>Period Covered:</strong> <span class="meta-val" id="goalSem">[]</span></span>
         </div>
         <div class="doc-intro">
-          You don't need to complete every section or write at length — just take a moment to reflect on what you want.
-          I hope this process helps you clarify your thoughts and stay motivated. This page generates a PDF but does not store any data.
+          You don't need to write at length — take a moment to reflect on what you want.
+          I hope this process helps you clarify your thoughts and stay motivated. This page generates a PDF but does not store any data. For summer, skip things that are not applicable.
         </div>
 
         <div class="section">
@@ -501,7 +501,7 @@
   (function () {
     var sel = document.getElementById('semesterSel');
     var year = new Date().getFullYear();
-    ['Spring', 'Fall'].forEach(function(s) {
+    ['Spring', 'Summer', 'Fall'].forEach(function(s) {
       var o = document.createElement('option');
       o.value = year + ' ' + s; o.textContent = year + ' ' + s;
       sel.appendChild(o);
